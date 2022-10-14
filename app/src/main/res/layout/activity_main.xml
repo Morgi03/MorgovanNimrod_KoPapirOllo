@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,4 +7,117 @@
     tools:context=".MainActivity">
 
 
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/rpsImgHuman"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/rock" />
+
+        <TextView
+            android:id="@+id/textTeValasztas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A te választásod"
+            android:textAlignment="center"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/rpsImgAI"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/rock" />
+
+        <TextView
+            android:id="@+id/textGepValasztas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A gép választása"
+            android:textAlignment="center"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eredmény: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/emberEredmeny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ember: 0 "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/gepEredmeny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer: 0"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear3"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="KŐ" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/papir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="PAPÍR" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ollo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="OLLÓ" />
+    </LinearLayout>
 </RelativeLayout>
